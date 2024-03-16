@@ -8,4 +8,6 @@ M.options = {
   foldmethod = "indent",
 }
 
+
+M.mappings = require "custom.mappings"
 return M
