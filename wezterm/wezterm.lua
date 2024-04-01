@@ -1,6 +1,6 @@
 local wezterm = require 'wezterm'
 local config = {
-  font_size = 13.5,
+  font_size = 15,
   font = wezterm.font("JetBrainsMonoNL Nerd Font", { weight = "Regular" }),
   color_scheme = 'Catppuccin Mocha',
   hide_tab_bar_if_only_one_tab = true,
