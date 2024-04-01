@@ -1,0 +1,5 @@
+# DotFiles
+
+* neovim
+* tmux
+* wezterm
