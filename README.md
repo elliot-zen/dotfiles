@@ -1,5 +1,4 @@
 # My dotfiles;
 
-this config repository work on fedora,mpb,wsl;
-
+This configuration repository works on Fedora, MBP, and WSL
 
