@@ -7,6 +7,7 @@ HOME_DIR="$HOME"
 ITEMS=(
     ".zshrc"
     ".zimrc"
+    ".gitconfig"
     ".config/alacritty"
     ".config/gitui"
     ".config/nvim"

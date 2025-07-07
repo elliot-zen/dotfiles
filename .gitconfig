@@ -1,0 +1,28 @@
+[core]
+	editor = nvim
+  pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+    line-numbers = true
+    side-by-side = true
+    hyperlinks = true
+
+[merge]
+  tool = mvimdiff
+  conflictstyle = zdiff3
+
+[mergetool]
+    prompt = false
+    keepBackup = false
+
+[mergetool "mvimdiff"]
+    ; Be able to abort all diffs with `:cq` or `:cquit`
+    trustExitCode = true
+    ; layout = "(LOCAL,BASE,REMOTE)/MERGED"
+    cmd = nvim -d -R -c '$wincmd w' -c 'wincmd J' -c 'setlocal noreadonly' -c 'cd "$GIT_PREFIX"' -f \"$LOCAL\" \"$BASE\" \"$REMOTE\" \"$MERGED\"
+
