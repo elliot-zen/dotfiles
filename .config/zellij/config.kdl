@@ -284,6 +284,7 @@ load_plugins {
 // Default: default
 // 
 // theme "dracula"
+theme "tokyo-night-dark"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -363,7 +364,7 @@ default_mode "normal"
 // Examples:
 //
 // copy_command "xclip -selection clipboard" // x11
-// copy_command "wl-copy"                    // wayland
+copy_command "wl-copy"                    // wayland
 // copy_command "pbcopy"                     // osx
 // 
 // copy_command "pbcopy"
