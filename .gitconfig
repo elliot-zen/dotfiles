@@ -26,3 +26,6 @@
     ; layout = "(LOCAL,BASE,REMOTE)/MERGED"
     cmd = nvim -d -R -c '$wincmd w' -c 'wincmd J' -c 'setlocal noreadonly' -c 'cd "$GIT_PREFIX"' -f \"$LOCAL\" \"$BASE\" \"$REMOTE\" \"$MERGED\"
 
+[user]
+	name = songxiaoliang
+	email = xianman125@163.com

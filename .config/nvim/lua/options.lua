@@ -10,8 +10,8 @@ if vim.fn.has("wsl") == 1 then
   vim.g.clipboard = {
     name = "win32yank-wsl",
     copy = {
-      ["+"] = "clip.exe",
-      ["*"] = "clip.exe",
+      ["+"] = "clip.sh",
+      ["*"] = "clip.sh",
     },
     paste = {
       ["+"] =
@@ -22,3 +22,5 @@ if vim.fn.has("wsl") == 1 then
     cache_enabled = 0,
   }
 end
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"

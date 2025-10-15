@@ -137,3 +137,17 @@ alias gui='gitui'
 alias tailf='tail -f'
 
 export PATH=$PATH:$HOME/.cargo/bin:$HOME/go/bin
+
+. "$HOME/.local/bin/env"
+
+# pnpm
+export PNPM_HOME="/home/elliot/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+#
+# #java
+export JAVA_HOME=/opt/jdk-17.0.12
+export PATH="$JAVA_HOME/bin:$PATH"
