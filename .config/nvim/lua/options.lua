@@ -23,4 +23,4 @@ if vim.fn.has("wsl") == 1 then
   }
 end
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
