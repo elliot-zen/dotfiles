@@ -10,8 +10,8 @@ if vim.fn.has("wsl") == 1 then
   vim.g.clipboard = {
     name = "win32yank-wsl",
     copy = {
-      ["+"] = "clip.sh",
-      ["*"] = "clip.sh",
+      ["+"] = "powershell.exe -Command clip.exe",
+      ["*"] = "powershell.exe -Command clip.exe",
     },
     paste = {
       ["+"] =
