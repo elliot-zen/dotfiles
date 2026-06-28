@@ -1,0 +1,13 @@
+## Required 
+- fish
+- starship
+- bat
+- eza
+- zoxide
+- lazygit
+- zellij
+- uv
+- fnm
+- ripgrep
+- fzf
+- jq
